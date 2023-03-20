@@ -1,0 +1,71 @@
+/* HEADER */
+header
+{
+    background-color: #00f;
+    border-bottom: 2px solid black!important;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    transition: all .6s;
+}
+/* TOPO */
+.header-img-logo
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: .1rem .2rem .4rem black;
+    object-fit: cover;
+    margin-right: 4rem;
+}
+
+/* MENU LIST */
+.header-nav-menu li a:not(.active)
+{
+    color: rgb(182, 164, 164);
+}
+.header-nav-menu li:hover a, .header-nav-menu li a.active
+{
+    color: white!important;
+}
+/* HAMB MENU */
+.header-nav-item-hamburguer
+{
+    cursor: pointer;
+}
+.header-nav-item-hamburguer div
+{
+    width: 2rem;
+    height: .2rem;
+    margin: .2rem 0;
+    background-color: #fff;
+    box-shadow: 0 0 .5rem black;
+}
+.header-nav-item-hamburguer:hover div, .header-nav-item-hamburguer.active div
+{
+    background-color: #000;
+    box-shadow: 0 0 .5rem white;
+}
+
+/* HEADER SCROLLER */
+
+header.menuScroller
+{
+    background: rgb(0,0,0);
+}
+header.menuScroller a.header-link-logo
+{
+    display: none!important;
+}
+
+header.menuScroller ul.header-nav-menu
+{
+    margin-left: 10rem;
+}
+header.menuScroller .dropdown.text-end
+{
+    margin-right: 6rem;
+}
+
+

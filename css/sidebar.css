@@ -1,0 +1,37 @@
+.section-sidebar
+{
+    position: fixed;
+    top: 58px;
+    height: 93vh;
+    transition: all .6s;
+}
+.sidebar-open
+{
+    flex: 0 0 auto!important;
+    width: 16.66666667%!important;
+}
+
+
+/* Sidebar Close */
+.sidebar-close
+{
+    flex: 0 0 auto!important;
+    width: 6.33333333%!important;
+}
+.sidebar-close .nav-item span, .sidebar-close .dropdown strong
+{
+    display: none;
+}
+
+.sidebar-close .nav-item i
+{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.sidebar-close .dropdown img
+{
+    width: 50px;
+    height: 50px;
+}
+

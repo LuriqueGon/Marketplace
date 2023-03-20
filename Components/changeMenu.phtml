@@ -1,0 +1,39 @@
+
+<script>
+    let scroller = 0
+    document.onscroll = () =>
+    {
+        if(scrollY > 1) document.querySelector('header').classList.add('menuScroller')
+        if(scroller > scrollY) document.querySelector('header').classList.remove('menuScroller')
+
+        return scroller = scrollY 
+    }
+
+    const changeSidebar = () => 
+    {
+        const sidebar = document.querySelector('section.section-sidebar')
+        const asidebar = document.querySelector('aside.section-asidebar')
+
+        
+
+        if(sidebar.classList.value.indexOf('sidebar-open') > 0)
+        {
+            closeAllMenu(sidebar,asidebar)
+            sidebar.classList.add('sidebar-close')
+            asidebar.classList.add('sidebar-close')
+            
+        }else{
+            closeAllMenu(sidebar,asidebar)
+            sidebar.classList.add('sidebar-open')
+            asidebar.classList.add('sidebar-open')
+        }
+    }
+
+    const closeAllMenu = (sidebar, asidebar) => 
+    {
+        sidebar.classList.remove('sidebar-open')
+        sidebar.classList.remove('sidebar-close')
+        asidebar.classList.remove('sidebar-open')
+        asidebar.classList.remove('sidebar-close')
+    }
+</script>
