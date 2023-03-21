@@ -3,12 +3,16 @@
     position: fixed;
     top: 58px;
     height: 93vh;
-    transition: all .6s;
+    transition: all .4s;
 }
 .sidebar-open
 {
     flex: 0 0 auto!important;
     width: 16.66666667%!important;
+}
+.sidebar-open .nav-item span, .sidebar-open .dropdown strong
+{
+    transition: all .8s;
 }
 .sidebar-open img.item-logo
 {
