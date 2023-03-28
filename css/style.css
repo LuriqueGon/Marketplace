@@ -4,8 +4,13 @@ main
 }
 .section-content
 {
-    margin-top: 4rem!important;
+    margin-top: 6rem!important;
     padding: 0 3rem;
+}
+.section-content .content
+{
+    max-width: 900px;
+    margin: 0 auto;
 }
 abbr
 {

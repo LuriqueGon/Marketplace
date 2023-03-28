@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -15,17 +19,15 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sidebar.css">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
     <title>Layout</title>
 </head>
 
@@ -33,7 +35,8 @@
     <header class="p-2">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="header-link-logo d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <a href="/"
+                    class="header-link-logo d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                     <img src="/img/logo.png" class="header-img-logo">
                 </a>
 
@@ -52,7 +55,8 @@
                 </form>
 
                 <div class="dropdown text-end">
-                    <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="d-block link-light text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
@@ -69,17 +73,17 @@
     </header>
 
     <main class="row">
-        <section class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark section-sidebar sidebar-open">
+        <section class="d-flex flex-column flex-shrink-0 py-3 px-0 text-bg-dark section-sidebar sidebar-open">
             <a href="/">
                 <abbr title="Home">
                     <img src="/img/logo.png" class="item-logo" width="28" height="28">
                 </abbr>
             </a>
             <ul class="nav nav-pills flex-column mb-auto">
-               
+
                 <li class="nav-item">
                     <abbr title="Home">
-                        <a href="#" class="nav-link link-light active" aria-current="page">
+                        <a href="#" class="nav-link link-light" aria-current="page">
                             <i class="fa fa-home"></i>
                             <span>Home</span>
                         </a>
@@ -87,7 +91,7 @@
                 </li>
                 <li class="nav-item">
                     <abbr title="Users">
-                        <a href="#" class="nav-link link-light" aria-current="page">
+                        <a href="#" class="nav-link link-light active" aria-current="page">
                             <i class="fa fa-users"></i>
                             <span>Users</span>
                         </a>
@@ -125,18 +129,21 @@
                         </a>
                     </abbr>
                 </li>
-                
+
             </ul>
             <hr>
             <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
                     <strong>mdo</strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                     <li><a class="dropdown-item" href="#">Settings</a></li>
                     <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
                 </ul>
             </div>
@@ -145,43 +152,39 @@
 
 
         <section class="content section-content col-sm">
-                
+            
         </section>
     </main>
 </body>
 
 <script>
     let scroller = 0
-    document.onscroll = () =>
-    {
-        if(scrollY > 1) document.querySelector('header').classList.add('menuScroller')
-        if(scroller > scrollY) document.querySelector('header').classList.remove('menuScroller')
+    document.onscroll = () => {
+        if (scrollY > 1) document.querySelector('header').classList.add('menuScroller')
+        if (scroller > scrollY) document.querySelector('header').classList.remove('menuScroller')
 
-        return scroller = scrollY 
+        return scroller = scrollY
     }
 
-    const changeSidebar = () => 
-    {
+    const changeSidebar = () => {
         const sidebar = document.querySelector('section.section-sidebar')
         const asidebar = document.querySelector('aside.section-asidebar')
 
-        
 
-        if(sidebar.classList.value.indexOf('sidebar-open') > 0)
-        {
-            closeAllMenu(sidebar,asidebar)
+
+        if (sidebar.classList.value.indexOf('sidebar-open') > 0) {
+            closeAllMenu(sidebar, asidebar)
             sidebar.classList.add('sidebar-close')
             asidebar.classList.add('sidebar-close')
-            
-        }else{
-            closeAllMenu(sidebar,asidebar)
+
+        } else {
+            closeAllMenu(sidebar, asidebar)
             sidebar.classList.add('sidebar-open')
             asidebar.classList.add('sidebar-open')
         }
     }
 
-    const closeAllMenu = (sidebar, asidebar) => 
-    {
+    const closeAllMenu = (sidebar, asidebar) => {
         sidebar.classList.remove('sidebar-open')
         sidebar.classList.remove('sidebar-close')
         asidebar.classList.remove('sidebar-open')
